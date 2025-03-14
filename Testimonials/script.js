@@ -22,3 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showSlide(currentIndex);
 });
+
+function rate(stars, element) {
+    let parent = element.parentElement;
+    let starElements = parent.querySelectorAll(".star");
+
+    starElements.forEach((star, index) => {
+        star.classList.toggle("active", index < stars);
+    });
+}

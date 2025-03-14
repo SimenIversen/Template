@@ -7,7 +7,8 @@
     --border-hover-color: #1da4e3;
     --black: #000000;
     --white: #ffffff;
-    --shadow: #0000001a;
+    --shadow: #0000000f;
+    --star:#f1c40f;
 }
 html, body{
     font-family: Arial, Helvetica, sans-serif;
@@ -62,4 +63,22 @@ html, body{
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.3125rem;
+    margin-top: 1.25rem;
+}
+.star {
+    font-size: 1.5rem;
+    color: var(--subheading-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: var(--star);
+}
+
  
